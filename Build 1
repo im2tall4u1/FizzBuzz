@@ -1,0 +1,35 @@
+import random
+
+play = True
+
+while play:
+    number = random.randint(1, 100)
+    uname = input("Please type your name. I'd like to not be rude: ")
+
+    print("Hello", uname +".", )
+
+    question = input("Let's run a simulation! [Y/N] ")
+    if question == "n":
+        print("Well then, so be it.")
+
+    if question == "y":
+        print("Great! Type a number. Every multiple of 3 will get 'fizz' and every multiple of 5 will get 'buzz'. Mutliples of both will get 'fizzbuzz'")
+    num = int(input("Type a number: "))
+
+    if num%3==0 and num%5==0:
+        print ('FizzBuzz')
+
+    if num % 3 == 0:
+        print  ('Fizz')
+
+    if num % 5 == 0:
+        print ('Buzz')
+
+
+
+    num = input
+
+    again=str(input("Do you want to play again? type yes or no "))
+    if again == "no":
+        play = False
+
